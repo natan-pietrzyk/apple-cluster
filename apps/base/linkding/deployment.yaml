@@ -28,7 +28,7 @@ spec:
 
           envFrom:
             - secretRef:
-              name: linkding-env-secret
+                name: linkding-env-secret
 
           securityContext:
             allowPrivilegeEscalation: false
