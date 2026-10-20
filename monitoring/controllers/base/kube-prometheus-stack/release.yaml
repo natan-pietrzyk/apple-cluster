@@ -30,4 +30,14 @@ spec:
           kind: PrometheusRule
   values:
     grafana:
-      adminPassword: yougotme
+      adminPassword: yougotmelol
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+
+        hosts: grafana.natanhomelab.org
+
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grafana.natanhomelab.org
