@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: audiobookshelf
+  namespace: audiobookshelf
 spec:
   replicas: 1
   selector:
@@ -20,11 +21,10 @@ spec:
 
           envFrom:
             - configMapRef:
-                name: abs-configmap
+                name: audiobookshelf-configmap
 
           ports:
             - containerPort: 3005
               protocol: TCP
 
       restartPolicy: Always
-
