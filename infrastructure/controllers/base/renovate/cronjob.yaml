@@ -14,7 +14,7 @@ spec:
             - name: renovate
               image: renovate/renovate:latest
               args:
-                - mischavandenburg/pi-cluster
+                - natan-pietrzyk/apple-cluster
 
               envFrom:
                 - secretRef:
