@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: abs-config
+  namespace: audiobookshelf
+data:
+  PORT: 3005
