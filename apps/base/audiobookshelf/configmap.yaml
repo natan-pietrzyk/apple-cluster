@@ -4,4 +4,4 @@ metadata:
   name: abs-config
   namespace: audiobookshelf
 data:
-  PORT: 3005
+  PORT: "3005"
